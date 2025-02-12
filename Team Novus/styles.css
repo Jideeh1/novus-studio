@@ -42,19 +42,38 @@ html, body {
     opacity: .3;
 }
 
+.nav {
+    filter: blur(0);
+    background-color: #0a0d0f;
+    margin: 0; padding: 0; 
+    position: absolute; 
+    top: 0; 
+    height: 100px; 
+    width: 0%; 
+    position: sticky;
+}
+
 nav {
+    position: sticky;
+    top: 0;
     justify-content: center;
     display: flex;
-    margin-top: 10px;
+    padding-top: 10px;
     padding: 20px;
     gap: 100px;
+    z-index: 3;
+    backdrop-filter: blur(0px);
     div {
-        z-index: 3;
+        z-index: 5;
     }
     .navbtn:hover {
         color: #0a0d0f;
         background-color: greenyellow;
     }
+}
+
+.navcon {
+    filter: blur(0);
 }
 
 .navbtn {
