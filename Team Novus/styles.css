@@ -3,6 +3,11 @@
     src: url(assets/sub.ttf);
 }
 
+@font-face {
+    font-family: "main";
+    src: url(assets/main.ttf);
+}
+
 * {
     color: #fffefe;
     font-family: "sub";
@@ -88,9 +93,37 @@ nav {
 }
 
 .gameinfo {
+    margin-top: 80px;
     width: 732px;
     height: 400px;
-    z-index: 2
+    z-index: 2;
+    display: flex;
+    gap: 24px;
+    img {
+        height: 200px;
+        border-radius: 10px;
+    }
+    .txtinfo {
+        padding: 10px;
+        a {
+            color: greenyellow;
+            margin: 0;
+            font-size: 20px;
+            font-family: "main";
+            cursor: pointer;
+        }
+        .gametitle {
+            font-family: "main";
+            margin: 0;
+            font-size: 46px;
+        }
+        h6 {
+            font-family: "main";
+            margin: 10px 0 10px 0;
+            font-size: 15px;
+            color: rgba(255,255,255,.6);
+        }
+    }
 }
 
 .filler {
@@ -109,4 +142,70 @@ nav {
         -ms-transform: translate(-14%, 0);
         transform: translate(30%, -210%);;
     }
+}
+
+.metrics .divider {
+    height: 19px;
+    width: 1px;
+    border-left: .5px solid rgba(255, 255, 255, .15);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.metrics {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex
+;
+    width: -webkit-max-content;
+    width: -moz-max-content;
+    width: max-content;
+    gap: 14px;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+}
+
+.metrics .metric-header {
+    font-size: 30px;
+    letter-spacing: -1px;
+    font-weight: 700;
+    color: #fff;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    display: -webkit-inline-box;
+    display: -ms-inline-flexbox;
+    display: inline-flex
+;
+    min-height: 29px;
+}
+
+.metrics .metric-description {
+    font-size: 12px;
+    font-weight: 500;
+    color: rgba(255, 255, 255, .8);
+    line-height: 24px;
+}
+
+.metrics .metric-item {
+    position: relative;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex
+;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    gap: 4px;
+    text-align: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+}
+
+.metrics .avatar {
+    height: 44px;
 }
