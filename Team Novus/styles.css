@@ -92,10 +92,16 @@ nav {
     display: flex;
 }
 
+.gameinfo-hero {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 10px;
+}
+
 .gameinfo {
-    margin-top: 80px;
+    margin-top: 100px;
     width: 732px;
-    height: 400px;
     z-index: 2;
     display: flex;
     gap: 24px;
@@ -208,4 +214,56 @@ nav {
 
 .metrics .avatar {
     height: 44px;
+}
+
+.gameinfo-footer {
+    z-index: 3;
+    color: rgba(255, 255, 255, .6);
+    margin-top: 48px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-inline: 20px;
+    gap: 20px;
+    background-color: rgba(221, 240, 12, .1);
+    border-radius: 82px;
+    display: flex;
+    gap: 15px;
+}
+
+.gi-btn {
+    margin: 10px 0;
+    border-radius: 82px;
+    background-color: #ddf00c;
+    color: #3b5209;
+    text-align: center;
+    place-items: center;
+    font-size: 26px;
+    padding: 10px 34px;
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    font-weight: bolder;
+}
+
+a img {
+    outline: none;
+    border: 0;
+}
+.subhead {
+    color: #ddf00c;
+    font-family: "sub";
+    font-size: 13px;
+    margin: 0;
+    padding-top: 10px;
+}
+
+.subcon {
+    margin: 0;
+    color: rgba(255,255,255,.6);
+    padding-bottom: 10px;
+    font-size: 15px;
+}
+
+.highlight {
+    color: white;
 }
