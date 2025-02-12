@@ -105,8 +105,8 @@ nav {
         transform: translate(-10%, -10%);;
     }
     .monitor {
-        position: absolute;
-        top: 230px;
-        right: 0px;
+        -webkit-transform: translate(-14%, 0);
+        -ms-transform: translate(-14%, 0);
+        transform: translate(30%, -210%);;
     }
 }
