@@ -92,6 +92,13 @@ nav {
     display: flex;
 }
 
+.section-config {
+    max-width: 1270px;
+    margin: 0 auto;
+    padding: 0 30px;
+    margin-top: 100px;
+}
+
 .gameinfo-hero {
     display: flex;
     flex-direction: column;
@@ -106,7 +113,7 @@ nav {
     display: flex;
     gap: 24px;
     img {
-        height: 200px;
+        height: 220px;
         border-radius: 10px;
     }
     .txtinfo {
@@ -243,6 +250,13 @@ nav {
     justify-content: center;
     gap: 10px;
     font-weight: bolder;
+    cursor: pointer;
+    border: transparent;
+    transition: all .2s ease-in-out;
+}
+
+.gi-btn:hover {
+    background-color: #ddf00c90;
 }
 
 a img {
@@ -266,4 +280,115 @@ a img {
 
 .highlight {
     color: white;
+}
+
+.title {
+    font-family: "main";
+    font-size: 40px;
+}
+
+.guidecards {
+    display: flex;
+}
+
+.steps {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -webkit-backdrop-filter: blur(25px);
+    backdrop-filter: blur(25px);
+    z-index: 3;
+    width: 315px;
+    height: auto;
+    padding: 24px;
+    background: rgba(255,255,255,.05);
+    border-radius: 24px;
+}
+
+#download {
+    transform: rotate(-3deg);
+}
+#open {
+    transform: rotate(3deg);
+}
+#toggle {
+    transform: rotate(-3deg);
+}
+#play {
+    transform: rotate(3deg);
+}
+
+.steptxt {
+    color: rgba(255,255,255,.6);
+    font-family: "main";
+    margin: 0;
+    letter-spacing: 1px;
+    font-size: 20px;
+}
+
+.learn-more {
+    width: auto;
+    margin: 10px 0;
+    border-radius: 64px;
+    border: transparent;
+    background-color: rgba(221,240,12,.1);
+    color: #ddf00c;
+    text-align: center;
+    place-items: center;
+    font-size: 23px;
+    padding: 0px 34px;
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    font-weight: bolder;
+    cursor: pointer;
+    transition: all .2s ease-in-out;
+}
+
+.learn-more:hover {
+    background-color: rgba(221, 240, 12, 0.153);
+}
+
+.step-title {
+    margin: 5px 0 10px 0;
+    font-size: 30px;
+    font-family: "main";
+    letter-spacing: -3px;
+}
+
+.step-content {
+    color: rgba(255,255,255,.6);
+    font-family: "main";
+    margin: 0;
+    letter-spacing: 1px;
+    font-size: 15px;
+    margin: 10px 0;
+    font-family: "sub";
+}
+
+.gi-btn2 {
+    margin:0;
+    margin-top: 20px;
+    border-radius: 82px;
+    background-color: #ddf00c;
+    color: #3b5209;
+    text-align: center;
+    place-items: center;
+    font-size: 26px;
+    padding: 10px 34px;
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    font-weight: bolder;
+    cursor: pointer;
+    border: transparent;
+    transition: all .2s ease-in-out;
+}
+
+.gi-btn2:hover {
+    background-color: #ddf00c90;
+}
+
+.step-image {
+    margin-top: 20px;
+    width: 250px;
 }
