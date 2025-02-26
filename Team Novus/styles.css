@@ -411,3 +411,46 @@ a img {
     margin-top: 20px;
     width: 250px;
 }
+
+.description {
+    border-radius: 24px;
+    background: rgba(255,255,255,.05);
+    padding: 43px 50px;
+
+    .title {
+        margin: 0;
+    }
+}
+
+.description-secondary-text {
+    margin: 10px 0px 20px 0px;
+    color: rgba(255,255,255,.6);
+    font-family: "main";
+}
+
+.arrow {
+    color: #ddf00c;
+}
+
+.besides-arrow {
+    margin: 0;
+    font-family: sans-serif;
+    vertical-align: middle;
+}
+
+.description-buttons {
+    display: inline-flex;
+    vertical-align: middle;
+    gap: 10px;
+    cursor: pointer;
+    padding: 5px 10px;
+    background-color: #ffffff00;
+    border: 1px solid transparent;
+    border-radius: 4px;
+    transition: all 0.4s ease-in-out;
+}
+
+.description-buttons:hover {
+    background-color: #ffffff10;
+    border: 1px solid transparent;
+}
