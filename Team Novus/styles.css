@@ -12,6 +12,7 @@
     color: #fffefe;
     font-family: "sub";
     letter-spacing: .5px;
+    transition: all .2s ease-in-out;
 }
 
 html, body {
@@ -143,6 +144,8 @@ nav {
             font-size: 20px;
             font-family: "main";
             cursor: pointer;
+        } a:hover {
+            color: #659526;
         }
         .gametitle {
             font-family: "main";
@@ -412,45 +415,104 @@ a img {
     width: 250px;
 }
 
-.description {
+.game_description {
+    background-color: rgba(255,255,255,.05);
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -webkit-backdrop-filter: blur(25px);
+    backdrop-filter: blur(25px);
     border-radius: 24px;
-    background: rgba(255,255,255,.05);
-    padding: 43px 50px;
+    padding: 20px 50px;
+    margin: 100px 0;
+    
+    .gd_title {
+        margin: 20px 0;
+        font-size: 40px;
+        font-family: "main";
+    }
 
-    .title {
-        margin: 0;
+    .gd_content {
+        color: rgba(255,255,255,.6);
+        margin: 20px 0;
+        font-size: 15px;
+        text-align: justify;
+
+        a {
+            color: #ffffff;
+            border-bottom: 3px solid #30515f;
+            padding: 0;
+            height: auto;
+            text-decoration: none;
+        }
+        a:hover {
+            background-color: #30515f;
+        }
+
     }
 }
 
-.description-secondary-text {
-    margin: 10px 0px 20px 0px;
-    color: rgba(255,255,255,.6);
-    font-family: "main";
-}
-
-.arrow {
-    color: #ddf00c;
-}
-
-.besides-arrow {
-    margin: 0;
-    font-family: sans-serif;
-    vertical-align: middle;
-}
-
-.description-buttons {
-    display: inline-flex;
-    vertical-align: middle;
-    gap: 10px;
+.seemore {
     cursor: pointer;
-    padding: 5px 10px;
-    background-color: #ffffff00;
-    border: 1px solid transparent;
-    border-radius: 4px;
-    transition: all 0.4s ease-in-out;
+    margin-left: 10px;
+    font-family: Arial, Helvetica, sans-serif;
+    display: flex;
+ 
+    .arrow {
+        vertical-align: middle;
+        font-size: 10px;
+        margin: 0 10px;
+        padding: 3px 0;
+        color: yellowgreen;
+        transform: rotate(0deg);
+        transition: transform 1s ease-in-out;
+    }
+} .seemore:hover {
+    color: #ffffff80;
+
+    .arrow:hover {
+        color: #659526;
+    }
 }
 
-.description-buttons:hover {
-    background-color: #ffffff10;
-    border: 1px solid transparent;
+.dev_info {
+    margin: 20px 0;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.profile {
+    cursor: pointer;
+    background-color: rgb(35, 35, 35);
+    border-radius: 14px;
+    padding: 20px 20px;
+    justify-content: left;
+    gap: 20px;
+    display: none;
+    
+
+    .dev_icons {
+        width: 50px;
+        height: 50px;
+        border-radius: 100%;
+    }
+    .name-role {
+        margin: 0;
+        flex-direction: row;
+
+        .dev_name {
+            margin: 0;
+            font-size: 20px;
+        }
+
+        .dev_role {
+            margin: 0;
+            color: rgba(255,255,255,.6);
+        }
+    }
+}
+
+.profile:hover {
+    background-color: rgb(48, 48, 48);
+    transform: scale(1.01);
 }

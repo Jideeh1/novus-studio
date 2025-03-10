@@ -10,10 +10,30 @@ function showNav() {
     if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
         document.getElementById("nav").style.backdropFilter = "blur(10px)";
         document.getElementById("nav").style.zIndex = "5";
+        console.log("Scroll Effect is active") //debugging line
 
     }
     else {
         document.getElementById("nav").style.backdropFilter = "blur(0px)";
         document.getElementById("nav").style.zIndex = "3";
     }
+}
+
+function logoRefresh() {
+    window.location.reload()
+    console.log("Logo Refresh has been clicked.") //debugging line
+}
+
+function seeMore() {
+    const profiles = document.querySelectorAll(".profile");
+
+
+    const areProfilesVisible = profiles[0].style.display === "flex";
+    profiles.forEach(profile => {
+        profile.style.display = areProfilesVisible ? "none" : "flex";
+    });
+
+    const arrow = document.querySelector(".arrow");
+    arrow.style.transform = areProfilesVisible ? "rotate(0deg)" : "rotate(450deg)";
+    console.log("See more button has been pressed."); //ALWAYS- ALWAYS PUT A DEBUG LINE!
 }

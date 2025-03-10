@@ -22,11 +22,11 @@
 <body>
     <img class="bg" src="assets/empty.jpg" alt="">
     <nav onscroll="showNav()" id="nav">
-        <div class="navcon"><img height="50px" src="assets/white.png"></div>
+        <div class="navcon"><img height="50px" src="assets/white.png" style="cursor: pointer;" onclick="logoRefresh()"></div>
         <div class="list navcon">
+            <a class="item" href="#desc">Description</a>
             <a class="item" href="#how-it-works">How It Works</a>
             <a class="item" href="#vh">Version Install</a>
-            <a class="item" href="#desc">Description</a>
             <a class="item" href="">Features</a>
             <a class="item" href="">Community</a>
             <a class="item" href="">My Account</a>
@@ -84,6 +84,61 @@
         </div>
     </section>
     <section id="how-it-works" class="section-config">
+        <figure class="game_description">
+            <h1 id="desc" class="gd_title">Game Description</h1>
+            
+            <p class="gd_content">
+                The world of Memoria Nostra takes place in a richly imagined higher-medieval time, where the familiar gives way to the extraordinary. 
+                A group of friends is mysteriously transported from Earth to the world of arcane and power, Aetheria. Here, they are thrust into a land brimming
+                with magical experience quite literally, and martial prowess unlike anything they've ever known. What more could they want when all they've done was
+                fantasize of being in a world exactly like this? But this land is no sunshine and rainbows only. Though the world brought an experience of a lifetime,
+                it was inevitable to have the thought dawn on them. Could they go back to Earth? Or will they be stuck in Aetheria forever?
+                So as they explore Aetheria, their end-goal remains the same: Go back to their world.
+            </p>
+            <p class="gd_content">
+                Memoria Nostra utilizes <a href="https://www.renpy.org/">Ren'py</a>, a python game launcher made specifically for making Visual Novels.
+                While it is meant to be a story-packed game, it features JRPG battle system gameplays——mainly <a href="https://en.wikipedia.org/wiki/Strategy_video_game">
+                turn-based</a> combat system. Developed by four people, this passion project have gone through extra yards of trial and errors to bring you a story and 
+                gameplay worth playing to the end.
+            </p>
+            <a class="seemore" onclick="seeMore()"><p class="arrow">⮞</p>Developers Information</a>
+
+            <div class="dev_info">
+                <!-- Jideeh Profile -->
+                <div class="profile">
+                    <img src="https://i.pinimg.com/1200x/ae/c1/96/aec196ee2c7a0920cc42fe58828f62ee.jpg" alt="Icons" class="dev_icons">
+                    <div class="name-role">
+                        <h1 class="dev_name">Jideeh</h1>
+                        <p class="dev_role">Lead Developer, Web Developer, Co-Writer, UI Designer</p>
+                    </div>
+                </div>
+                <!-- ShizoCatto Profile -->
+                <div class="profile">
+                    <img src="https://storage.ko-fi.com/cdn/useruploads/ee100b93-a94c-4250-a4f0-d500a1e4f4cc.png" alt="Icons" class="dev_icons">
+                    <div class="name-role">
+                        <h1 class="dev_name">ShizoCatto</h1>
+                        <p class="dev_role">Lead Illustrator, Author, Co-Developer, UI Designer, Concept Artist</p>
+                    </div>
+                </div>
+                <!-- _fraxter_ Profile -->
+                <div class="profile">
+                    <img src="https://cdn.inflact.com/media/475232795_1815948675857588_5261535099730076604_n.jpg?url=https%3A%2F%2Fscontent.cdninstagram.com%2Fv%2Ft51.2885-19%2F475232795_1815948675857588_5261535099730076604_n.jpg%3Fstp%3Ddst-jpg_e0_s150x150_tt6%26_nc_ht%3Dinstagram.flim16-1.fna.fbcdn.net%26_nc_cat%3D108%26_nc_oc%3DQ6cZ2AFbPdxzgLUAtPp1u3l9SsI13rtSndsjwxpthfWbmUnihcxKwFVarIZmvP-5y8HgeXizf_WxHgiNE8v8M3OjJPYi%26_nc_ohc%3DqbwhJAWvwEIQ7kNvgHhG49Z%26_nc_gid%3Ddc376a306632452e961091b9d8edfab2%26edm%3DAOQ1c0wBAAAA%26ccb%3D7-5%26oh%3D00_AYE9l07vh2eXc-M6StvxuKx2vjMRNyFHBxvQSsCiPl8D8g%26oe%3D67D43039%26_nc_sid%3D8b3546&time=1741568400&key=8a702fd0e5eade76216edadbf323827c" alt="Icons" class="dev_icons">
+                    <div class="name-role">
+                        <h1 class="dev_name">_fraxter_</h1>
+                        <p class="dev_role">Asset Creator, UI Asset Manager</p>
+                    </div>
+                </div>
+                <!-- Kyutka3  Profile -->
+                <div class="profile">
+                    <img src="https://pbs.twimg.com/profile_images/1830412782145093635/y1DjCHhc_400x400.jpg" alt="Icons" class="dev_icons">
+                    <div class="name-role">
+                        <h1 class="dev_name">Kyutka3</h1>
+                        <p class="dev_role">Concept Artist</p>
+                    </div>
+                </div>
+            </div>
+
+        </figure>
         <h1 class="title">How does it work?</h1>
         <figure class="guidecards">
             <div class="steps" id="download">
@@ -122,18 +177,6 @@
     </section>
 
     <section class="section-config" id="version-install">
-        <figure class="description">
-            <h1 class="title" id="desc">Memoria Nostra Description</h1>
-            <p class="description-secondary-text">The first game to adopt an isekai setting that explores the hidden world parallel to the characters blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah, basically put the synopsis here -- jideeh</p>
-            <div class="description-buttons">
-                <span class="arrow">⮞</span>
-                <span class="besides-arrow">question question blah blah blah dunno what to put here</span>
-            </div>
-            <div class="description-buttons">
-                <span class="arrow">⮞</span>
-                <span class="besides-arrow">listen, I don't really know what to put here</span>
-            </div>
-        </figure>
     </section>
 
     <script src="script.js"></script>
