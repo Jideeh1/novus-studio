@@ -37,3 +37,7 @@ function seeMore() {
     arrow.style.transform = areProfilesVisible ? "rotate(0deg)" : "rotate(450deg)";
     console.log("See more button has been pressed."); //ALWAYS- ALWAYS PUT A DEBUG LINE!
 }
+
+function openInNewTab(url) {
+    window.open(url, '_blank').focus();
+}  
