@@ -429,6 +429,7 @@ a img {
     border-radius: 24px;
     padding: 20px 50px;
     margin: 100px 0;
+    transition: height .4s ease-in-out;
     
     .gd_title {
         margin: 20px 0;
@@ -494,6 +495,9 @@ a img {
     justify-content: left;
     gap: 20px;
     display: none;
+    opacity: 1;
+    visibility: hidden;
+    transition: opacity 0.5s ease, visibility 0.5s ease;
     
 
     .dev_icons {
@@ -600,4 +604,16 @@ footer {
 
 .divider {
     line-height: 1px;
+}
+
+.invisible {
+    opacity: 0;
+    visibility: hidden;
+    transition: opacity 0.5s ease, visibility 0.5s ease;
+}
+
+.visible {
+    opacity: 1;
+    visibility: visible;
+    display: flex;
 }

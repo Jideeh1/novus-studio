@@ -40,4 +40,31 @@ function seeMore() {
 
 function openInNewTab(url) {
     window.open(url, '_blank').focus();
-}  
+} 
+
+function toggleOpen(){
+    const box = document.getElementById(".invisible");
+    box.classList.toggle(".visible");
+}
+
+function betterSeeMore() {
+    const profiles = document.querySelectorAll(".dev_info");
+
+    const firstProfile = profiles[0];
+    const visibleInfo = firstProfile.style.height !== "756px"; 
+
+    profiles.forEach(profile => {
+        profile.style.height = visibleInfo ? "756px" : "396px";
+        profile.style.visibility = "visible";
+        profile.style.opacity = "1";
+        profile.style.display = "flex";
+        seeMore();
+    });
+
+    const arrow = document.querySelector(".arrow");
+    arrow.style.transform = visibleInfo ? "rotate(450deg)" : "rotate(0deg)";
+
+    document.querySelector(".game_description").style.height = visibleInfo ? "756px" : "369px";
+
+    console.log("you're pressing, yeah? SO WHY IS IT NOT WORING") //debug line
+}
